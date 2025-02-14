@@ -24,26 +24,26 @@ export function Feed({ items }: FeedProps) {
   };
 
   return (
-    <div className="relative h-[100dvh] w-full overflow-hidden bg-black">
+    <div className="relative h-[100dvh] w-full overflow-hidden ">
       {/* Tab Navigation */}
       <div className="absolute left-0 right-0 top-0 z-10 flex justify-center bg-transparent p-4">
-        <div className="flex gap-4">
+        <div className="flex justify-center items-center w-[80%]">
           <Button
-            className={`text-white bg-transparent ${
+            className={`text-white bg-transparent flex-1 text-xl ${
               activeTab === "video" ? "border-b-2 border-white " : ""
             }`}
             onClick={() => handleTabChange("video")}
           >
-            <LucideImagePlay className="mr-2 h-4 w-4" />
+            <LucideImagePlay className="mr-2 h-6 w-6" />
             Videos
           </Button>
           <Button
-            className={`text-white bg-transparent ${
+            className={`text-white bg-transparent flex-1 text-xl ${
               activeTab === "image" ? "border-b-2 border-white" : ""
             }`}
             onClick={() => handleTabChange("image")}
           >
-            <ImageIcon className="mr-2 h-4 w-4" />
+            <ImageIcon className="mr-2 h-6 w-6" />
             Images
           </Button>
         </div>

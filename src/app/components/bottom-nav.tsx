@@ -28,7 +28,6 @@ export function BottomNav() {
         <span>Explore</span>
       </Link>
       {/* Create Link Button */}
-
       <Link
         href="#"
         className="flex flex-col items-center text-sm text-gray-600 dark:text-gray-400 pt-2 "
